@@ -1,2 +1,17 @@
-# MI_CNN
-利用CNN以及RNN对脑电信号（BCI）进行运动想想分类。其中CNN无法收敛，RNN测试准确率在百分之六十左右。
+# MI Recognition
+
+This project involves using Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN) to classify motor imagery in EEG signals (Brain-Computer Interface, BCI).
+- The CNN model was unable to converge during training.
+- The RNN model achieved a test accuracy of approximately 60%.
+
+## Usage
+
+```bash
+# 1. Preprocess the data
+python utils/preprocess.py
+
+# 2. Train the RNN model
+python models/train_rnn.py
+
+# 3. Evaluate the RNN model
+python models/evaluate_rnn.py
